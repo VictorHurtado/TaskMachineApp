@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+.Container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.Background {
+  position: relative;
+  z-index: 1;
+}
+.Card {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}

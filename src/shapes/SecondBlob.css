@@ -1,0 +1,4 @@
+.SecondBlob {
+  filter: blur(120px);
+  position: absolute;
+}
