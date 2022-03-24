@@ -4,7 +4,7 @@ import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreateTodoButton';
-import { Blob, SecondBlob } from './shapes/index';
+import { Blob, SecondBlob, ThreeBlob } from './shapes/index';
 
 import './App.css';
 
@@ -20,7 +20,9 @@ function App() {
     <React.Fragment>
       <div className="Background">
         <Blob />
+
         <SecondBlob />
+        <ThreeBlob />
       </div>
       <main className="Container">
         <div></div>
