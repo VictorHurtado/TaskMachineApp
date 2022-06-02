@@ -1,0 +1,7 @@
+.SecondBlob {
+  filter: blur(120px);
+  position: absolute;
+  max-height: 100vh;
+  min-width: 100vw;
+  opacity: 0.7;
+}

@@ -1,0 +1,233 @@
+.modal-component-container {
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.modal-flex-container {
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    z-index: 4;
+    
+
+}
+
+.modal-bg-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #374151;
+    opacity: 0.75;
+    z-index: 4;
+}
+
+.modal-space-container {
+    display: none;
+
+
+}
+.modal-wrapper-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal-container {
+    display: inline-block;
+    /* overflow: hidden; */
+    border-radius: 20%;
+    background-color: #ffffff;
+    transition-property: all;
+    text-align: left;
+    vertical-align: bottom;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    position: relative;
+    z-index: 4;
+
+}
+
+.modal-wrapper {
+ 
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1.25rem;
+
+    z-index: 5;
+
+}
+
+.modal-icon {
+    display: flex;
+    background-color:#ff6b6b ;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    z-index: 5;
+
+}
+
+.modal-content {
+    margin-top: 0.75rem;
+    text-align: center;
+    z-index: 5;
+
+
+}
+
+.headertag {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+
+
+}
+
+.modal-text {
+    margin-top: 0.5rem;
+}
+
+.content-p {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+
+}
+
+.modal-actions {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+
+
+
+}
+.modal-button{
+    display: inline-flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  
+    font-weight: 500;
+    justify-content: center;
+    margin: 0.2rem 0.2rem;
+    border-radius: 0.375rem;
+    border-color: transparent;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 6;
+}
+
+.modal-primary-button {
+  
+    background-color:  #54c7ac;
+    color: #F3F4F6;
+  
+ 
+    margin-left: 0.5rem;
+
+
+}
+.modal-secondary-button{
+    background-color:  rgb(175, 175, 175);
+    color: #F3F4F6;
+  
+ 
+    margin-left: 0.5rem;
+
+}
+.open-modal-upload{
+    z-index: 5;
+}
+.hidden{
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .modal-flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .modal-space-container {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .modal-container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        vertical-align: middle;
+        max-width: 32rem;
+    }
+
+    .modal-wrapper {
+        padding: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .modal-wrapper-flex {
+    
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .modal-icon {
+        margin-left: 0;
+        margin-right: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .modal-content {
+        margin-top: 0;
+        margin-left: 1rem;
+        text-align: left;
+    }
+
+    .modal-actions {
+        display: flex;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        flex-direction: row-reverse;
+    }
+    .modal-button{
+        margin: 0 0.2rem;
+    }
+    .modal-primary-button {
+        margin-top: 0;
+        margin-left: 0;
+        width: auto;
+    }
+    .modal-secondary-button {
+        margin-top: 0;
+        margin-left: 0;
+        width: auto;
+    }
+}

@@ -1,0 +1,77 @@
+.TodoItem {
+  background-color: #ffff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(199, 199, 199);
+  padding: 0.5rem 0;
+  color: #727272;
+}
+
+.TodoItem-p {
+  margin: 0;
+  width: calc(100% - 120px);
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+
+.Icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: 38px;
+  font-size: 21px;
+  font-weight: bold;
+  /* background-color: #CCC; */
+}
+
+.Icon-check {
+  position: absolute;
+  left: 12px;
+}
+.Icon-check--active {
+  color: #4caf50;
+}
+
+.Icon-delete {
+  position: absolute;
+  top: -24px;
+  right: 0;
+}
+.Icon-delete:hover {
+  color: red;
+}
+
+.TodoRadio {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fdfdfd;
+  box-shadow: -5px 5px 10px rgba(226, 226, 226, 0.2),
+    5px -5px 10px rgba(226, 226, 226, 0.2),
+    -5px -5px 10px rgba(255, 255, 255, 0.9),
+    5px 5px 13px rgba(226, 226, 226, 0.9),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 2px rgba(226, 226, 226, 0.5);
+  border-radius: 0.2rem;
+
+}
+.TodoIcon {
+  font-size: 2rem;
+  color: rgb(155, 155, 155);
+}
+
+@media screen and (max-width: 768px) {
+  .TodoItem-p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,14 @@
+.TodoList {
+  margin: 0;
+  padding: 0;
+}
+
+.TodoList > ul {
+  margin: 0;
+  padding: 0 0 46px 0;
+  list-style: none;
+}
+
+.TodoList > ul li:last-child {
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
