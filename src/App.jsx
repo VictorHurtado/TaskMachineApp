@@ -54,7 +54,7 @@ function App() {
        
       </main>
       <div>
-        <TaskModal>|</TaskModal>
+        <TaskModal></TaskModal>
       </div>
 
     </TodoState>

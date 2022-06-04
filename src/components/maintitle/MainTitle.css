@@ -19,3 +19,12 @@
     margin: 5px;
     color:#4ecdc4 ;
 }
+@media screen and (max-width: 768px) {
+
+    .Main-Title span{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+ 
+
+}

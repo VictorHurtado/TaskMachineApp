@@ -1,3 +1,5 @@
 export const GET_TODOS = 'GET_TODOS';
 export const GET_TODOS_UNCOMPLETED = 'GET_TODOS_UNCOMPLETED';
 export const SET_SELECTED_PAGE= 'SET_SELECTED_PAGE';
+export const SET_OPEN_MODAL = 'SET_OPEN_MODAL';
+export const SET_TODOS= 'SET_TODOS';

@@ -17,29 +17,40 @@ function TodoList() {
 
 
   useEffect(() => {
-    getTodos();
+    
     
     FilterTodos.isEmpty ? setIsLoading(true) : setIsLoading(false);
 
-  }, [selectedPage])
 
-  return (
-    <section>
-      <ul className="TodoList">
-        {isLoading ? (<div>Loading ...</div>) : (FilterTodos[selectedPage].map((todo, index) => {
+  }, [selectedPage,todos])
 
-          console.log(todo);
-          return <TodoItem
-            index={index}
-            key={index}
-            text={todo.text}
-            completed={todo.completed}
-          />
-        }))}
+  
+    return (
+      <section>
+        <ul className="TodoList">
+          {
+            
+          
+          isLoading ? (<div>Loading ...</div>) : (FilterTodos[selectedPage].map((todo, index) => {
+            
+            return <TodoItem
+              index={index}
+              key={index}
+              text={todo.text}
+              completed={todo.completed}
+            />
+          
+          }))
+          
+          
+          }
+  
+        </ul>
+      </section>
+    );
 
-      </ul>
-    </section>
-  );
+
+ 
 }
 
 export { TodoList };

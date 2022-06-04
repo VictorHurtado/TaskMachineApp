@@ -95,6 +95,19 @@
   
   }
   .Card {
+    margin-top: 2rem;
     padding: 3rem 3rem;
+  }
+  .Main-Image, .Main-Leyend{
+    width: 40%;
+    font-size: 17px;
+  }
+  .Main-Leyend h5{
+    margin: 17px auto;
+  
+    font-size: 20px;
+  }
+  .Main-Leyend p{
+    font-size: 17px;
   }
 }

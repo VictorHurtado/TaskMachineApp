@@ -10,7 +10,10 @@ function PaginatorAccess() {
 
   const [currentPage, setCurrentPage] = useState(1);
   const { todos,setSelectedPages } = useContext(TodoContext);
-  var     qtPages = Math.ceil(todos < qtTodosPage ? 1 : todos.length / qtTodosPage);
+
+
+  
+  var  qtPages = Math.ceil(todos <= qtTodosPage ? 1 : todos.length / qtTodosPage);
   var qtPagesArray = [...Array(qtPages).keys()].map(i => i + 1);
   var  nextPage=currentPage;
   var middleValues = false;
