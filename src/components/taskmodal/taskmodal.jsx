@@ -15,7 +15,7 @@ function TaskModal() {
    
       }
     function _handleCaptureInputValue(){
-        setTodos({ text: state.textVal, completed: false });
+        setTodos({ "text": state.textVal, "completed": false });
         setState({ textVal: ""});
 
         setOpenModal(false);

@@ -2,17 +2,9 @@ import {React, useReducer } from 'react';
 import TodoReducer from './TodoReducer';
 import TodoContext from './TodoContext';
 
-const allTodos = [
-    { text: 'Cortar cebolla', completed: true },
-    { text: 'Tomar el cursso de intro a React', completed: false },
-    { text: 'Llorar con la llorona', completed: false },
- 
-    { text: 'Cortar cebolla', completed: true },
-    { text: 'Tomar el cursso de intro a React', completed: false },
+import {getAllTodosRepository,addNewTodoRepository} from '../../services/todorepository/todosrepository'
 
-    { text: 'Cortar cebolla', completed: true },
-    
-  ];
+var allTodos =  await getAllTodosRepository();
 
 const TodoState = (props)=>{
     const initialState={
@@ -35,7 +27,9 @@ const TodoState = (props)=>{
         })
     }
 
-    const getTodosUncompleted = ()=>{
+    const getTodosUncompleted = async()=>{
+        allTodos = await getAllTodosRepository();
+
         var todosFilter= allTodos.filter(todo=> todo.completed==false);
         
         dispatch({
@@ -45,20 +39,23 @@ const TodoState = (props)=>{
     
     }
 
-    const getTodos = ()=>{
-        
+    const getTodos = async()=>{
+        allTodos = await getAllTodosRepository();
         dispatch({
             type: 'GET_TODOS',
             payload: allTodos
         })
     
     }
-    const setTodos=(newTodo)=>{
-        var newArray= state.todos.concat([newTodo]);
- 
+    const setTodos=async(newTodo)=>{
+    
+        var response = await addNewTodoRepository(newTodo);
+        allTodos = await getAllTodosRepository();
+   
+        console.log(response);
         dispatch({
             type: 'SET_TODOS',
-            payload: newArray
+            payload: allTodos
         })
     
 

@@ -9,7 +9,7 @@ const qtTodosPage = 5;
 function PaginatorAccess() {
 
   const [currentPage, setCurrentPage] = useState(1);
-  const { todos,setSelectedPages } = useContext(TodoContext);
+  const { todos,setSelectedPages,getTodos } = useContext(TodoContext);
 
 
   

@@ -14,11 +14,11 @@ function TodoList() {
   const { todos, selectedPage, getTodos } = useContext(TodoContext);
   const [isLoading, setIsLoading] = useState(true);
   var FilterTodos =todos.length>qtTodosPage? SeparateArrayByChuncks(todos, qtTodosPage):[todos];
-
+   
 
   useEffect(() => {
-    
-    
+
+
     FilterTodos.isEmpty ? setIsLoading(true) : setIsLoading(false);
 
 
