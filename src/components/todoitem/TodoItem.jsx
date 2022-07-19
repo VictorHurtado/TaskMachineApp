@@ -1,6 +1,6 @@
 import React from 'react';
-import './TodoItem.css';
 import CarbonCheckmark from '~icons/carbon/checkmark';
+import '../../public/css/TodoItem.css';
 
 function TodoItem(props) {
   return (

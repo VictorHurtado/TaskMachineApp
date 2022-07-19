@@ -1,9 +1,14 @@
 import { React, useEffect, useState, useContext } from 'react';
-import './TodoCounter.css';
 import CarbonViewFilled from '~icons/carbon/view-filled';
 import CarbonViewOffFilled from '~icons/carbon/view-off-filled'
 import TodoContext from "../../context/Todo/TodoContext";
+
 import { SeparateArrayByChuncks } from "../../utils/ArrayUtils";
+import '../../public/css/TodoCounter.css';
+
+
+
+
 const qtTodosPage = 5;
 function TodoCounter() {
   const { todos, selectedPage, getTodosUncompleted, getTodos } = useContext(TodoContext);

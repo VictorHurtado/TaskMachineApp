@@ -1,6 +1,6 @@
 import { React, useEffect, useState, useContext } from 'react';
 import TodoContext from "../../context/Todo/TodoContext";
-import './PaginatorAccess.css';
+import '../../public/css/PaginatorAccess.css';
 import { NumberPage } from './widgets/NumberAccess';
 
 

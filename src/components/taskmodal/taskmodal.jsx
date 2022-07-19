@@ -2,7 +2,7 @@ import { React, useEffect, useContext, useState } from 'react';
 import TodoContext from "../../context/Todo/TodoContext";
 
 import IconoirCancel from '~icons/iconoir/cancel';
-import './taskmodal.css';
+import '../../public/css/taskmodal.css';
 
 function TaskModal() {
     const [state, setState] = useState({textVal: ''})

@@ -12,4 +12,19 @@ export default defineConfig({
       jsx: 'react', // 'react' or 'preact'
     }),
   ],
+  base: '/app/',
+  server: {
+    port: 5001,
+    https: false,
+  },
+  preview: {
+    base: '/app/',
+    open: true,
+    port: 8080,
+    https: false,
+  },
+  build: {
+    minify: 'esbuild',
+    target: "esnext"
+  }
 });

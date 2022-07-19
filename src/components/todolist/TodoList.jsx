@@ -5,7 +5,7 @@ import TodoContext from "../../context/Todo/TodoContext";
 
 
 import { SeparateArrayByChuncks } from "../../utils/ArrayUtils";
-import './TodoList.css';
+import '../../public/css/TodoList.css';
 
 const qtTodosPage = 5;
 

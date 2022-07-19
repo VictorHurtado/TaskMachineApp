@@ -1,5 +1,5 @@
 import {React,useEffect} from 'react';
-import '../PaginatorAccess.css';
+import '../../../public/css/PaginatorAccess.css';
 
 function NumberPage(props) {
 
